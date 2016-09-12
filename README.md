@@ -8,6 +8,12 @@ MediaWiki is a free and open-source wiki application. Originally developed by Ma
 
 # How to use this image
 
+## Supported Tags
+- 'latest' - Use latest stable release 
+- 'LTS' - Use latest LTS release
+- '1.27' - Use latest release with major version 1.27
+- '1.26' - Use latest release with major version 1.26
+
 ## Start MySQL or MariaDB
 
 To use MediaWiki, you need a database of your choice. You may deploy [MySQL](https://registry.hub.docker.com/_/mysql/) or [MariaDB](https://registry.hub.docker.com/_/mariadb) as a separate container (see linked Docker hub pages for instructions). Of course you can also use an existing server instead.

@@ -27,6 +27,9 @@ then
     else
         MAJOR=${AVAILABLE_MAJORS[0]}
     fi
+elif [ "$1" == "LTS" ]
+then
+    MAJOR=$(curl -fsSL https://www.mediawiki.org/wiki/Download | grep LTS | grep -m1 -o "[1-9]\.[0-9][0-9]*" | uniq)
 elif expr "$1" : '^1\.[1-9][0-9]*$' >/dev/null
 then
     MAJOR=$1    
