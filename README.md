@@ -4,15 +4,15 @@
 
 MediaWiki is a free and open-source wiki application. Originally developed by Magnus Manske and improved by Lee Daniel Crocker, it runs on many websites, including Wikipedia, Wiktionary and Wikimedia Commons. It is written in the PHP programming language and stores the contents into a database. Like WordPress, which is based on a similar licensing & architecture, it has become the dominant software in its category.
 
-(see [here](https://wikipedia.org/wiki/MediaWiki)
+(see [here](https://wikipedia.org/wiki/MediaWiki))
 
 # How to use this image
 
 ## Supported Tags
-- 'latest' - Use latest stable release 
-- 'LTS' - Use latest LTS release
-- '1.27' - Use latest release with major version 1.27
-- '1.26' - Use latest release with major version 1.26
+- `latest` - Use latest stable release 
+- `LTS` - Use latest LTS release
+- `1.27` - Use latest release with major version 1.27
+- `1.26` - Use latest release with major version 1.26
 
 ## Start MySQL or MariaDB
 
