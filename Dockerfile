@@ -26,7 +26,7 @@ RUN gpg --keyserver pool.sks-keyservers.net --recv-keys \
 ADD get-mediawiki.sh /tmp/get-mediawiki.sh
 
 RUN set -x; \
-    /tmp/get-mediawiki.sh 1.27 \
+    /tmp/get-mediawiki.sh LTS \
     && gpg --verify /tmp/mediawiki.tar.gz.sig \
     && tar -xf /tmp/mediawiki.tar.gz -C /var/www/html --strip-components=1 \
     && rm -rf /tmp/get-mediawiki.sh /tmp/mediawiki.tar.gz*
