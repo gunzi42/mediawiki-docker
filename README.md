@@ -18,7 +18,7 @@ MediaWiki is a free and open-source wiki application. Originally developed by Ma
 
 To use MediaWiki, you need a database of your choice. You may deploy [MySQL](https://registry.hub.docker.com/_/mysql/) or [MariaDB](https://registry.hub.docker.com/_/mariadb) as a separate container (see linked Docker hub pages for instructions). Of course you can also use an existing server instead.
 
-###TL;DR
+### TL;DR
 
 You may deploy a MariaDB container with the following command:
 
@@ -32,7 +32,7 @@ If you do not have this configuration file yet you need to run MediaWiki a first
 
 To start the MediaWiki installer
 
-	docker run --rm --name mediawiki-installer --link mediawiki-db:db -d gunzi/mediawiki
+	docker run --rm --name mediawiki-installer --link mediawiki-db:db -d gunzi/mediawiki:latest
 
 After that opeen a web browser and go to the docker host's server.
 If you are running MediaWiki on your local system, go to [http://localhost](http://localhost).
@@ -50,7 +50,7 @@ Note: This will delete the container as well if you used the command shown above
 Now you can start MediaWiki and run it normally. 
 Therefore you need to mount the LocalSettings to the container. You should also provide an image folder and extension folder so that you can upload files to your Wiki and add additional extension.
 
-	docker run --name mediawiki -v </path/to/LocalSettings.php>:/var/www/html/LocalSettings.php:ro -v </path/to/images>:/var/www/html/images -v </path/to/extensions>:/tmp/extensions --link mediawiki-db:db -p 80:80 -d gunzi/mediawiki
+	docker run --name mediawiki -v </path/to/LocalSettings.php>:/var/www/html/LocalSettings.php:ro -v </path/to/images>:/var/www/html/images -v </path/to/extensions>:/var/www/html/extensions --link mediawiki-db:db -p 80:80 -d gunzi/mediawiki:latest
 
 
 ## Contributing
